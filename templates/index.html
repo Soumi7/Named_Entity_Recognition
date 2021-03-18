@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>NER API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+ <div class="login">
+  <h1>Named Entity Recognition</h1>
+  
+  <h5>Enter the sentence : 
+
+
+  </h5>
+
+
+  
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="sentence" placeholder="Sentence" required="required" />
+        
+		
+        <button type="submit" name="action" class="btn btn-primary btn-block btn-large" value="display">Get NER tags</button>
+        <button type="submit" name="action" class="btn btn-primary btn-block btn-large" value="getcsv">Get CSV</button>
+    </form>
+
+    
+        
+    
+   <br>
+   <br>
+   
+   <h6> {{ prediction_text }}</h6>
+   
+
+ </div>
+
+
+</body>
+</html>
