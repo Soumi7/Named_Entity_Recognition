@@ -1,0 +1,8 @@
+Flask==1.1.1
+numpy>=1.9.2
+json
+matplotlib>=1.4.3
+pandas>=0.19
+simpletransformers
+io
+flask_csv
