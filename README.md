@@ -12,12 +12,12 @@ Simple Transformers lets you quickly train and evaluate Transformer models.The S
 
 ### The process of Named Entity Recognition has four steps:
 
-    - Obtaining training and testing data
-    - Preprocessing the data into dataframes required for the model inputs
-    - Training the model
-    - Testing the model
-    - Tuning the model further for better accuracy
-    - Creating an interface for the model
+  - Obtaining training and testing data
+  - Preprocessing the data into dataframes required for the model inputs
+  - Training the model
+  - Testing the model
+  - Tuning the model further for better accuracy
+  - Creating an interface for the model
 
 Obtaining training and testing data
 
@@ -146,12 +146,12 @@ There are several pretrained models that can be used. You can choose one dependi
 
 Supported model types for Named Entity Recognition in Simple Transformers:
 
-    - BERT
-    - CamemBERT
-    - DistilBERT
-    - ELECTRA
-    - RoBERTa
-    - XLM-RoBERTa
+   - BERT
+   - CamemBERT
+   - DistilBERT
+   - ELECTRA
+   - RoBERTa
+   - XLM-RoBERTa
 
 ## Creating an interface for the model
 
